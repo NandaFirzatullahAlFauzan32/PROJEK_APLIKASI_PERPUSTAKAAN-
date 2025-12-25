@@ -257,9 +257,17 @@ void pinjamBuku() {
     fgets(nama, 50, stdin);
     nama[strcspn(nama, "\n")] = 0;
 
+    while (1) {
     printf("NIM: ");
-    scanf("%d", &NIM);
-    bersihkanBuffer();
+    
+    if (scanf("%d", &NIM) == 1) {
+        bersihkanBuffer();
+        break;              
+    } else {
+        printf("Input NIM tidak valid! Harus berupa angka.\n");
+        bersihkanBuffer();
+    }
+    }
 
     // Proses Simpan Data
     int tgl = getTanggalSekarang();
