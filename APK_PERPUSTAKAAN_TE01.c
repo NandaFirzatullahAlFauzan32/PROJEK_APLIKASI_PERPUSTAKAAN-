@@ -259,7 +259,6 @@ void pinjamBuku() {
 
     while (1) {
     printf("NIM: ");
-    
     if (scanf("%d", &NIM) == 1) {
         bersihkanBuffer();
         break;              
