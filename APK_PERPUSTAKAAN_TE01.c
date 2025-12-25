@@ -288,7 +288,7 @@ void pinjamBuku() {
 
     printf("==========================================\n");
     printf("        STRUK PEMINJAMAN BUKU             \n");
-    printf("        PERPUSTAKAAN TEKNIK               \n");
+    printf("         PERPUSTAKAAN TEKNIK               \n");
     printf("==========================================\n");
     printf(" Tanggal  : %02d-%02d-%04d\n", h, bl, th);
     printf(" Peminjam : %-20s\n", nama);
@@ -376,7 +376,7 @@ void kembaliBuku() {
         bersihkanTampilan();
         printf("==========================================\n");
         printf("        STRUK PENGEMBALIAN BUKU           \n");
-        printf("        PERPUSTAKAAN TEKNIK               \n");
+        printf("         PERPUSTAKAAN TEKNIK               \n");
         printf("==========================================\n");
         printf(" Tanggal Kembali : %02d-%02d-%04d\n", h, bl, th);
         printf(" Nama Peminjam   : %-20s\n", namaSmt);
@@ -547,7 +547,7 @@ int main() {
             case 5: 
    
     {
-        char password[5];  
+        char password[50];  
         
         bersihkanTampilan();
         printf("=== TAMBAH BUKU ===\n\n");
